@@ -1,12 +1,7 @@
 #  Documentation
 
 
----
-**NOTE**
 
-This is the version of the nlp pipeline as submitted as a bachelor thesis. The development repository can be found here: < add link to new repo>
-
----
 ## create nlp-pipeline docker container
 
 1. Change to the directory with the dockerfile
@@ -42,7 +37,7 @@ remove existing project:
 ### nlp function
 
 load data to new project:
-``` curl -i 'http://127.0.0.1:5000/nlp/project_a/load' -F file=@./Tweets.csv -X POST -H 'enctype:multipart/form-data ; Content-Type:multipart/form-data'```
+``` curl -i 'http://127.0.0.1:5000/nlp/project_a/load?text=text&sentiment=airline_sentiment' -F file=@./Tweets.csv -X POST -H 'enctype:multipart/form-data ; Content-Type:multipart/form-data'```
 
 explore data:
 ```curl -i 'http://127.0.0.1:5000/nlp/project_a/exploartion'```

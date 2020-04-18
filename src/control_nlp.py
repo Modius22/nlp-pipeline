@@ -29,7 +29,7 @@ debugging = True
 # load data
 #################################################################################
 
-def load_data(project):
+def load_data(project, text, sentiment):
     """ copy data from local system to api server into working directory.
 
     Parameters
@@ -51,7 +51,7 @@ def load_data(project):
         file = request.files.get('file')
         df = pd.read_csv(file)
         df = df.reindex(np.random.permutation(df.index))
-        df = df[['text', 'airline_sentiment']]
+        df = df[[text, sentiment]]
         feather.write_dataframe(df, '../working/' + project + '/' + project + '_raw.feather')
     except:
         return 'Error'
