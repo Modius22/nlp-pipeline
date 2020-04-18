@@ -17,6 +17,10 @@
 1. change in the src directory
 2. run ```python control.py```
 
+## Testing
+
+e.g. ``` python -m unittest tests/test_data_load.py ```
+
 ## example run of each function
 
 ### standard function
