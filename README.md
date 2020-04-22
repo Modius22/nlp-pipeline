@@ -21,6 +21,8 @@
 
 e.g. ``` python -m unittest tests/test_data_load.py ```
 
+for all test: ```python -m unittest discover tests/```
+
 ## example run of each function
 
 ### standard function

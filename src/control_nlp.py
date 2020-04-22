@@ -45,11 +45,12 @@ def load_data(project, text, sentiment):
     try:
         if debugging:
             print('### Load Data ###')
-            print('file directory: ' + os.path.abspath("."))
+           # print('file directory: ' + os.path.abspath("."))
 
 
         file = request.files.get('file')
         df = pd.read_csv(file)
+        print(df.count())
         df = df.reindex(np.random.permutation(df.index))
         df = df[[text, sentiment]]
         feather.write_dataframe(df, '../working/' + project + '/' + project + '_raw.feather')
