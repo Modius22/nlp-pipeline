@@ -1,6 +1,9 @@
 #  Documentation
 
 
+## Architecture of the pipeline
+
+![alt text](https://github.com/Modius22/nlp-pipeline/blob/master/img/nlp_pipeline.png?raw=true)
 
 ## create nlp-pipeline docker container
 
