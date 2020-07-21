@@ -17,4 +17,3 @@ COPY ./src /app/src
 WORKDIR /app/src
 ENTRYPOINT ["python"]
 CMD [ "api.py" ]
-
