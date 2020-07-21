@@ -18,7 +18,7 @@
 
 ## start api from terminal 
 1. change in the src directory
-2. run ```python control.py```
+2. run ```python api.py```
 
 ## example run of each function
 
