@@ -1,5 +1,5 @@
 aniso8601==8.0.0
-certifi==2019.6.16
+certifi==2022.12.7
 Click==7.0
 emoji==0.5.4
 feather-format==0.4.0
